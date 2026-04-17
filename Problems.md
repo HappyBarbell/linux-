@@ -10,4 +10,6 @@ cp -r ~/esp/console_example /mnt/e/u_w/
 
 ESESIXPACKAGE拓展名文件不能被ESIX识别，换成esix拓展名可被识别
 
-linux连接本机网络被拒绝
+linux连接本机网络被拒绝：开tun/虚拟网卡模式模式
+
+json设置无效（划白线）
