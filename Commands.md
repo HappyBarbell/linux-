@@ -4,3 +4,4 @@ cd ..
 cd ~/
 alias查看哪些设置了别名
 nano ~/.bashrc
+source ~/.bashrc
