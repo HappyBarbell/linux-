@@ -15,3 +15,10 @@ linux连接本机网络被拒绝：开tun/虚拟网卡模式模式
 json设置无效（划白线）
 
 出现一些idf自带宏标红，检查export.sh了没，build后重新打开可解决
+
+形如 #Failed to resolve component 'esp_log' required by component 'main': unknown name的报错，是组件名错误或者没有填在cmakelist中
+查找组件名：ctrl+点击头文件名，跳转到的文件若在component中，鼠标悬停在跳转到的文件标签上，显示的component目录下的根目录级（若其中含cmakelist）的名字即为组件名
+查找后需要填在在项目文件夹中main文件夹的cmakelist里的PRIV_REQUIRES和REQUIRES后面
+
+
+
