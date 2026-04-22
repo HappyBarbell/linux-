@@ -10,7 +10,8 @@ cp -r ~/esp/console_example /mnt/e/u_w/
 
 ESESIXPACKAGE拓展名文件不能被ESIX识别，换成esix拓展名可被识别
 
-linux连接本机网络被拒绝：开tun/虚拟网卡模式模式
+wsl连接本机网络被拒绝：开tun/虚拟网卡模式模式也不行，从powershell打开ubuntu终端时发现“wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理”，
+在win键后搜索wsl setting，把第一栏nat模式改为mirror问题解决。
 
 json设置无效（划白线）
 
