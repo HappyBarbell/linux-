@@ -46,3 +46,19 @@ sudo chmod 666 /dev/ttyACM0
 idf.py -p /dev/ttyACM0 flash
 ```
 
+nrf
+1. 编译
+ ```  
+west build -b xiao_ble/nrf52840/sense
+```
+2. 打包成 DFU 固件
+```
+adafruit-nrfutil dfu genpkg --dev-type 0x0052 --application build\zephyr\zephyr.hex firmware.zip
+```
+3. 烧录
+先双击板子上的 RESET 进 bootloader，看设备管理器记下新出现的 COM 号，把下面的 COM<x> 换成它：
+```
+adafruit-nrfutil --verbose dfu serial --package firmware.zip -p COM<x> -b 115200 --singlebank
+```
+
+
