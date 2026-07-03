@@ -65,4 +65,10 @@ adafruit-nrfutil --verbose dfu serial --package firmware.zip -p COM<x> -b 115200
 python -m serial.tools.miniterm COM7 115200
 ```
 
+4.戴上取下重录命令
+```
+cd E:\nrf\posture_band_nrf\tools
+python wear_recorder.py
+```
+
 
