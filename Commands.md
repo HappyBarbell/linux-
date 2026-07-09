@@ -68,6 +68,7 @@ python -m serial.tools.miniterm COM7 115200
 4.戴上取下重录命令
 ```
 cd E:\nrf\posture_band_nrf\tools
+python ble_detect.py
 python wear_recorder.py
 ```
 
