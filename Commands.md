@@ -36,8 +36,8 @@ idf.py build
 先win powershell输入  
 ```
 usbipd list
-usbipd bind --busid <你的BUSID>
-usbipd attach --wsl --busid <你的BUSID>
+usbipd bind --busid 1-3
+usbipd attach --wsl --busid 1-3
 ```
 再wsl终端
 ```
@@ -58,11 +58,11 @@ adafruit-nrfutil dfu genpkg --dev-type 0x0052 --application build\zephyr\zephyr.
 3. 烧录
 先双击板子上的 RESET 进 bootloader(出现f盘后)，看设备管理器记下新出现的 COM 号，把下面的 COM<x> 换成它：
 ```
-adafruit-nrfutil --verbose dfu serial --package firmware.zip -p COM<x> -b 115200 --singlebank
+adafruit-nrfutil --verbose dfu serial --package firmware.zip -p COM11 -b 115200 --singlebank
 ```
 串口监视
 ```
-python -m serial.tools.miniterm COM7 115200
+python -m serial.tools.miniterm COM13 115200
 ```
 
 4.戴上取下重录命令
