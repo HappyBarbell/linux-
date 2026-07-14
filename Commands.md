@@ -70,6 +70,7 @@ python -m serial.tools.miniterm COM13 115200
 cd E:\nrf\posture_band_nrf\tools
 python ble_detect.py
 python wear_recorder.py
+python phone_sim.py
 ```
 
 
