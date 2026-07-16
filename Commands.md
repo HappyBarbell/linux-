@@ -66,7 +66,9 @@ python -m serial.tools.miniterm COM13 115200
 ```
 串口监视存盘
 ```
-python -m serial.tools.miniterm COM13 115200 --capture-file raw.txt
+python -m serial.tools.miniterm COM13 115200 --capture-file raw.txt   #esp-idf
+python serial_capture.py COM13 115200 raw.txt
+
 ```
 4.戴上取下重录命令
 ```
