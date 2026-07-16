@@ -64,7 +64,10 @@ adafruit-nrfutil --verbose dfu serial --package firmware.zip -p COM11 -b 115200 
 ```
 python -m serial.tools.miniterm COM13 115200
 ```
-
+串口监视存盘
+```
+python -m serial.tools.miniterm COM13 115200 --capture-file raw.txt
+```
 4.戴上取下重录命令
 ```
 cd E:\nrf\posture_band_nrf\tools
